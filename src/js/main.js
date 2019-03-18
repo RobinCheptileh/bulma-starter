@@ -1,1 +1,1 @@
-console.log("Try Bulma!");
+console.log('Try Bulma!');
