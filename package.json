@@ -2,35 +2,41 @@
   "name": "bulma-starter",
   "version": "1.0.0",
   "description": "Boiler plate code to bootstrap your next web project with Bulma.",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --mode development --open",
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "test": "eslint --ignore-path .gitignore .",
-    "lint": "eslint --ignore-path .gitignore .",
-    "lint:fix": "eslint --fix --ignore-path .gitignore .",
-    "prettier": "prettier --single-quote --trailing-comma es5 --print-width 80 --write --no-bracket-spacing **/*.js"
+  "keywords": [
+    "Bulma",
+    "webpack"
+  ],
+  "homepage": "https://github.com/RobinCheptileh/bulma-starter#readme",
+  "bugs": {
+    "url": "https://github.com/RobinCheptileh/bulma-starter/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:RobinCheptileh/bulma-starter.git"
   },
-  "keywords": [
-    "Bulma",
-    "webpack"
-  ],
-  "author": "Robin Cheptileh",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/RobinCheptileh/bulma-starter/issues"
+  "author": "Robin Cheptileh",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ignore-path .gitignore .",
+    "prettier": "prettier --single-quote --trailing-comma es5 --print-width 80 --write --no-bracket-spacing **/*.js",
+    "start": "webpack-dev-server --mode production --open",
+    "start:dev": "webpack-dev-server --mode development --open",
+    "test": "eslint --ignore-path .gitignore ."
   },
-  "homepage": "https://github.com/RobinCheptileh/bulma-starter#readme",
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
+    "@fortawesome/fontawesome-free": "^5.7.2",
+    "autoprefixer": "^9.5.0",
     "babel-loader": "^8.0.5",
+    "bulma": "^0.7.4",
     "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
     "eslint": "^5.3.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
@@ -50,11 +56,5 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
-  },
-  "dependencies": {
-    "autoprefixer": "^9.5.0",
-    "cssnano": "^4.1.10",
-    "@fortawesome/fontawesome-free": "^5.7.2",
-    "bulma": "^0.7.4"
   }
 }

@@ -23,6 +23,10 @@ CircleCI, `master` branch:
 
 1) `npm start`
 
+### Start application in Development
+
+1) `npm run start:dev`
+
 ## Test
 
 1) `npm test`
