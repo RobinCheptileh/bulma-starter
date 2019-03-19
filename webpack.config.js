@@ -9,7 +9,7 @@ module.exports = (env, argv) => {
     const sassLoaders = ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'];
 
     if (argv.mode === 'production') {
-        sassLoaders.push('postcss-loader');
+        sassLoaders.splice(3, 0, 'postcss-loader');
         minimizeHTML = true;
     }
 
