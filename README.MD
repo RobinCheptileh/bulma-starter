@@ -1,6 +1,6 @@
 # Bulma Starter
 
-Boiler plate code to bootstrap your next web project with Bulma.
+Boiler plate code that includes a Webpack config and circleci config to bootstrap your next web project with Bulma.
 
 ## Build status
 

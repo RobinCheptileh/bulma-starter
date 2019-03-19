@@ -1,5 +1,17 @@
 @import "~bulma/bulma";
 
-body {
-  background: #fcac45;
+img {
+  &#bulma-b {
+    height: 128px;
+  }
+
+  &#webpack-logo, &#circleci-logo {
+    height: 48px;
+  }
+}
+
+a {
+  &.button {
+    margin-top: 16px;
+  }
 }
