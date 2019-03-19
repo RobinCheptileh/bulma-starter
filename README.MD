@@ -2,6 +2,8 @@
 
 Boiler plate code that includes a Webpack config and circleci config to bootstrap your next web project with Bulma.
 
+Check out the template [Here (https://robincheptileh.github.io/bulma-starter/)](https://robincheptileh.github.io/bulma-starter/).
+
 ## Build status
 
 CircleCI, `master` branch:
