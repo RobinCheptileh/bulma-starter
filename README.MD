@@ -44,6 +44,10 @@ It's very important (required) to launch lint before pushing any code on github 
 
 1) `npm run lint:fix`
 
+### Check code formatting using `Prettier`
+
+1) `npm run prettier:check`
+
 ### Prettify code using `Prettier`
 
 1) `npm run prettier`
@@ -52,7 +56,7 @@ It's very important (required) to launch lint before pushing any code on github 
 
 ### Build for development
 
-1) `npm run dev`
+1) `npm run build:dev`
 
 ### Build for production
 

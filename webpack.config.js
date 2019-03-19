@@ -20,8 +20,8 @@ module.exports = (env, argv) => {
                     test: /\.js$/,
                     exclude: /node_modules/,
                     use: {
-                        loader: 'babel-loader'
-                    }
+                        loader: 'babel-loader',
+                    },
                 },
                 {
                     test: /\.html$/,
@@ -29,32 +29,32 @@ module.exports = (env, argv) => {
                         {
                             loader: 'html-loader',
                             options: {
-                                minimize: minimizeHTML
-                            }
-                        }
-                    ]
+                                minimize: minimizeHTML,
+                            },
+                        },
+                    ],
                 },
                 {
                     test: /\.(css|sass|scss)$/,
-                    use: sassLoaders
+                    use: sassLoaders,
                 },
                 {
                     test: /\.(jpe?g|png|gif|svg)$/i,
                     loader: 'file-loader',
                     options: {
-                        outputPath: 'img'
-                    }
-                }
-            ]
+                        outputPath: 'img',
+                    },
+                },
+            ],
         },
         plugins: [
             new HtmlWebPackPlugin({
                 template: './src/index.html',
-                filename: 'index.html'
+                filename: 'index.html',
             }),
             new MiniCssExtractPlugin({
-                filename: 'style.css'
-            })
-        ]
+                filename: 'style.css',
+            }),
+        ],
     };
 };

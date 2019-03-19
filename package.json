@@ -19,13 +19,16 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack --mode development",
-    "lint": "eslint --ignore-path .gitignore .",
-    "lint:fix": "eslint --fix --ignore-path .gitignore .",
-    "prettier": "prettier --single-quote --trailing-comma es5 --print-width 80 --write --no-bracket-spacing **/*.js",
+    "build:dev": "webpack --mode development",
+    "build:docs": "webpack --mode production --output-path ./docs/",
+    "build:docs:dev": "webpack --mode development --output-path ./docs/",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prettier": "prettier --write **/**",
+    "prettier:check": "prettier --check **/**",
     "start": "webpack-dev-server --mode production --open",
     "start:dev": "webpack-dev-server --mode development --open",
-    "test": "eslint --ignore-path .gitignore ."
+    "test": "eslint ."
   },
   "dependencies": {},
   "devDependencies": {
